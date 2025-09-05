@@ -1,49 +1,37 @@
 User-agent: *
+Allow: /
 Disallow: /admin/
-Disallow: /administrator/
 Disallow: /wp-admin/
 Disallow: /wp-includes/
-Disallow: /includes/
-Disallow: /config/
-Disallow: /logs/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /cgi-bin/
+Disallow: /wp-login.php
 Disallow: /search/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /my-account/
 
-Allow: /wp-admin/admin-ajax.php
-Allow: /wp-content/uploads/
-Allow: /wp-content/themes/*/assets/
-Allow: /wp-content/plugins/*/assets/
-Allow: /media/
-Allow: /images/
-Allow: /assets/
-Allow: /css/
-Allow: /js/
+# BLOQUEAR PARÂMETROS DE AFILIADO - CRÍTICO PARA SEO
+Disallow: /*?aff_id=
+Disallow: /*?affiliate_id=
+Disallow: /*?ref=
+Disallow: /*?source=
+Disallow: /*?utm_
+Disallow: /*?*&aff_id=
 
-# Block specific files
+# Bloquear arquivos desnecessários
 Disallow: /readme.html
 Disallow: /license.txt
 Disallow: /wp-config.php
 Disallow: /error_log
 
-# Crawl delay for all bots (optional)
-Crawl-delay: 2
+# Permitir recursos importantes
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-content/uploads/
+Allow: /wp-content/themes/*/assets/
+Allow: /wp-content/plugins/*/assets/
+Allow: /images/
+Allow: /assets/
+Allow: /css/
+Allow: /js/
 
 # Sitemap location
 Sitemap: https://bioease.online/sitemap.xml
-
-# Rules specifically for Google's image bot
-User-agent: Googlebot-Image
-Allow: /*
-Disallow: /checkout/
-Disallow: /cart/
-Disallow: /my-account/
-
-# Rules specifically for Google's main bot
-User-agent: Googlebot
-Disallow: /checkout/
-Disallow: /cart/
-Disallow: /my-account/
-Allow: /*.css
-Allow: /*.js
