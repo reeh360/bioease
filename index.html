@@ -48,13 +48,14 @@
       gtag('config', 'G-X8TMBFLPEH');
     </script>
     
-    <!-- Schema.org Markup - Adicionado estrutura completa -->
+    <!-- Schema.org Markup - CORRIGIDO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "NerveCalm",
       "description": "Natural supplement for nerve pain relief and neuropathy support",
+      "image": "https://bioease.online/images/nervecalm-product.jpg",
       "brand": {
         "@type": "Brand",
         "name": "NerveCalm"
@@ -85,6 +86,39 @@
         "seller": {
           "@type": "Organization",
           "name": "NerveCalm"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": "1",
+              "maxValue": "2"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": "3",
+              "maxValue": "7"
+            }
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 180,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
         }
       }
     }
@@ -1254,4 +1288,3 @@
     </script>
 </body>
 </html>
-
