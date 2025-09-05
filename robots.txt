@@ -5,17 +5,18 @@ Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /wp-login.php
 Disallow: /search/
-Disallow: /checkout/
-Disallow: /cart/
-Disallow: /my-account/
 
-# BLOQUEAR PARÂMETROS DE AFILIADO - CRÍTICO PARA SEO
-Disallow: /*?aff_id=
-Disallow: /*?affiliate_id=
-Disallow: /*?ref=
-Disallow: /*?source=
+# PERMITIR parâmetros de afiliado - ESSENCIAIS para suas comissões
+Allow: /*?aff_id=
+Allow: /*?affiliate_id=
+Allow: /*?ref=
+Allow: /*?source=
+
+# Bloquear outros parâmetros que podem criar conteúdo duplicado
 Disallow: /*?utm_
-Disallow: /*?*&aff_id=
+Disallow: /*?sessionid=
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
 
 # Bloquear arquivos desnecessários
 Disallow: /readme.html
